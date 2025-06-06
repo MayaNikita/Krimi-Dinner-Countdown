@@ -1,7 +1,7 @@
-document.getElementById("countdown").innerText = "01:30:00";
+document.getElementById("countdown").innerText = "00:00:00";
 
 //let timer = 60 * 60 * 2;
-let timer = 5;
+let timer = 5 * 60; // 2 hours in seconds
 
 function startTimer(duration, display) {
     let interval = setInterval(function () {
@@ -28,5 +28,9 @@ window.onload = function () {
 };
 
 document.getElementById("subtract-minutes").addEventListener("click", (event) => {
-    timer -= 60 * 3
+    timer -= 60 * 2
+})
+
+document.getElementById("add-minutes").addEventListener("click", (event) => {
+    timer += 60 * 2
 })

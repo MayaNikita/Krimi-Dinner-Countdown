@@ -23,7 +23,7 @@ body {
     font-size: 160px;
 }
 
-button {
+button, a {
     background: transparent;
     border: 2px solid red;
     color: red;
@@ -31,9 +31,10 @@ button {
     cursor: pointer;
     font-size: 20px;
     font-family: "Special Elite", system-ui;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, a:hover {
     color: #000000;
     background: red;
     border-color: red;
